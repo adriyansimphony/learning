@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: "Adrian",
+        sayHello: function (name) {
+          alert(`Hello ${name}`);
+        },
+      };
+
+      //menamilkan function yang ada di object
+      // person.sayHello("Adrian");
+
+      //menambahkan function ke object
+      person.sayGoodbye = function (name) {
+        alert(`Goodbye ${name}`);
+      };
+
+      //menampilkan function goodbye yang baru ditambahkan ke object
+      // person.sayGoodbye("Adrian");
+    </script>
+  </body>
+</html>

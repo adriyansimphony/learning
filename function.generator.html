@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function* createName() {
+        yield "Adrian";
+        yield "syah";
+        yield "Maulana";
+      }
+
+      const names = createName();
+      for (const nama of names) {
+        console.info(nama);
+      }
+
+      function* buatGanjil(value) {
+        for (let i = 1; i <= value; i++) {
+          if (i % 2 === 1) {
+            yield i;
+          }
+        }
+      }
+
+      //   const nilai = prompt("tambahkan angka");
+      const numbers = buatGanjil(100);
+      for (const number of numbers) {
+        console.info(number);
+      }
+    </script>
+  </body>
+</html>

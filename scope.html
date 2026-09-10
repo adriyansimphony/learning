@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //global Scope
+
+      let name = "Adrian";
+
+      function say(nama) {
+        document.writeln(`<p>Hai ${nama}</p>`);
+      }
+      say(name);
+
+      function sayDalamScope() {
+        let nickname = "Syah";
+        let lastname = "Maulana";
+
+        document.writeln(`<p>hai kamu ${nickname}</p>`);
+
+        function dalamScope(nama) {
+          document.writeln(`<p>hai ini dalam scope ${nama}</p>`);
+          const nestedVar = 10;
+          document.writeln(nestedVar);
+        }
+        dalamScope(lastname);
+      }
+      sayDalamScope();
+      sayDalamScope();
+      sayDalamScope();
+      sayDalamScope();
+      function panggilLetAwal(hai) {
+        document.writeln(`<p>hai ihni ${hai}</p>`);
+      }
+      panggilLetAwal(name);
+      document.writeln(name);
+      console.info(nickname); //error nih karena dari local scope
+
+      // kalau kode awal error maka dibawahnya gak dieksekusi
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const sayHello = (name) => {
+        const nama = `Hello ${name}`;
+        console.info(nama);
+      };
+
+      sayHello("Adrian");
+
+      const sayHello2 = (nama) => console.info(`Hello ${nama}`);
+      sayHello2("maulana");
+
+      const sum = (first, second) => {
+        return first + second;
+      };
+
+      console.info(sum(100, 200));
+
+      function giveMeName(callback) {
+        callback("Aahay");
+      }
+
+      //anonymous function
+      giveMeName(function (name) {
+        console.info(`Hello ${name}`);
+      });
+
+      giveMeName((name) => console.info(`Hello ${name}`));
+    </script>
+  </body>
+</html>

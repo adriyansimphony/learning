@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const say2 = function(name2){
+            document.writeln(`<p>Ini fucntion 2 ${name2}</p>`);
+        }
+
+        const say = function(name){
+            document.writeln(`<p>Hello ${name}</p>`);
+        }
+
+        say("Adrian");
+        say("Maulana");
+
+        function giveMeName(callback){
+            callback("Syah","uhuy");
+        }
+
+        giveMeName(say2);
+        giveMeName(say);
+
+        giveMeName(function (name){
+            document.writeln(`<p>Ini ke parameter ${name}</p>`)
+        });
+
+        giveMeName(function (name,ttl){
+            document.writeln(`<p>Hai ini pakai 2 parameter ${name} ${ttl}</p>`);
+        })
+
+    </script>
+</body>
+</html>
