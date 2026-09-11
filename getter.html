@@ -8,13 +8,14 @@
   <body>
     <script>
       const person = {
-        name: "Adrian",
-        sayHello: function (name) {
-          alert(`Hello ${name}, my name is ${this.name}`);
+        firstName: "Adrian",
+        lastName: "Maulana",
+        get fullName() {
+          return `${this.firstName} ${this.lastName}`;
         },
       };
 
-      person.sayHello("Maulana");
+      console.log(person.fullName);
     </script>
   </body>
 </html>

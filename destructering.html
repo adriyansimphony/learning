@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      {
+        const name = ["Adrian", "Maulana", "Syah", "Riska", "Shafiya", "Zeelina"];
+
+        const [firstName, middleName, lastName, ...others] = name;
+
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+        console.info(others);
+        //cara lama ambil data dari array
+        // const firstName = name[0];
+        // const middleName = name[1];
+        // const lastName = name [2];
+
+        // console.info(firstName);
+        // console.info(middleName);
+        // console.info(lastName);
+      }
+      {
+        const person = {
+          firstName: "Adrian",
+          middleName: "Maulana",
+          lastName: "Syah",
+          address: {
+            street: "Jl.cisauk",
+            city: "Tangerang",
+            country: "Indonesia",
+          },
+          hobby: ["Coding", "Gaming", "Travelling"],
+          channel: "IT Supportman",
+        };
+
+        const {
+          firstName,
+          middleName,
+          lastName,
+          address: { street, city, country },
+          hobby,
+          channel,
+        } = person;
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+        console.info(street);
+        console.info(city);
+        console.info(country);
+        console.info(hobby);
+        console.info(channel);
+      }
+    </script>
+  </body>
+</html>

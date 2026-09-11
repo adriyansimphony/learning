@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function useStrictMode() {
+          "use strict";
+          const person = {
+              firstName: "Adrian",
+              lastName: "Maulana",
+              get fullName() {
+                  return `${this.firstName} ${this.lastName}`;
+              }
+              with (person){
+                  console.info(fullName);
+              }
+          }
+      }
+    </script>
+  </body>
+</html>
