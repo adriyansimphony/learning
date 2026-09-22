@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Employee {
+        sayHello(name) {
+          console.info(`Hello ${name}, saya seorang employee ${this.name}`);
+        }
+      }
+
+      class Manager extends Employee {}
+
+      const adrian = new Employee();
+      adrian.name = "adrian";
+      adrian.sayHello("shafiya");
+
+      const maulana = new Manager();
+      maulana.name = "maulana";
+      maulana.sayHello("shafiya");
+    </script>
+  </body>
+</html>

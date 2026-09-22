@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Employee {
+        constructor(firstName) {
+          this.firstName = firstName;
+        }
+
+        sayHello(name) {
+          console.info(`Hello ${name}, saya seorang employee ${this.firstName}`);
+        }
+      }
+
+      class Manager extends Employee {
+        constructor(firstName, lastName) {
+          super(firstName);
+          this.lastName = lastName;
+        }
+        sayHello(name) {
+          console.info(`Hello ${name}, saya seorang Manager ${this.firstName} ${this.lastName}`);
+        }
+      }
+
+      const adrian = new Employee("Adrian");
+      adrian.sayHello("shafiya");
+
+      const maulana = new Manager("Adriansyah", "Maulana");
+      maulana.sayHello("Riska");
+    </script>
+  </body>
+</html>
