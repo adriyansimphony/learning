@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      {
+        // Object Freeze dan Seal
+        const person = {
+          firstName: "Adriansyah",
+          lastName: "Maulana",
+        };
+
+        //   Object.freeze(person);
+        Object.seal(person);
+
+        person.firstName = "Riska";
+        person.middleName = "Shafiya";
+        delete person.lastName;
+        console.info(person);
+      }
+
+      {
+        const person = {
+          firstname: "Adriansyah",
+          lastname: "Maulana",
+        };
+
+        const status = {
+          status: "active",
+        };
+
+        Object.assign(person, status);
+        console.info(person);
+      }
+
+      {
+        const person = {
+          firstname: "Adriansyah",
+          lastname: "Maulana",
+        };
+
+        console.info(Object.keys(person));
+        console.info(Object.getOwnPropertyNames(person));
+        console.info(Object.values(person));
+      }
+    </script>
+  </body>
+</html>

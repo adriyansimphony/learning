@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      {
+        const array = ["Adriansyah", "Maulana", "Riska", "Shafiya", "oase"];
+        console.info(array);
+
+        array.forEach((value, index) => {
+          console.info(`Index ke-${index} adalah ${value}`);
+        });
+
+        array.forEach((value, index) => console.info(`Index ke-${index} adalah ${value}`));
+
+        array.forEach((value) => console.info(value));
+      }
+
+      {
+        const queue = [];
+
+        queue.push("Adriansyah");
+        queue.push("Maulana");
+        queue.push("Riska");
+        queue.push("Shafiya");
+        queue.push("oase");
+
+        console.info(queue.shift());
+        console.info(queue.shift());
+        console.info(queue.shift());
+        console.info(queue.shift());
+        console.info(queue.shift());
+        console.info(queue.shift());
+      }
+
+      {
+        const stack = [];
+
+        stack.push("Adriansyah");
+        stack.push("Maulana");
+        stack.push("Riska");
+        stack.push("Shafiya");
+        stack.push("oase");
+
+        console.info(stack.pop());
+        console.info(stack.pop());
+        console.info(stack.pop());
+        console.info(stack.pop());
+        console.info(stack.pop());
+        console.info(stack.pop());
+      }
+
+      {
+        const source = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
+
+        console.info(source.find((value) => value > 3));
+        console.info(source.findIndex((value) => value > 3));
+        console.info(source.includes(7));
+        console.info(source.indexOf(5));
+        console.info(source.lastIndexOf(5));
+      }
+
+      {
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        const ganjil = numbers.filter((value) => value % 2 === 1);
+        const genap = numbers.filter((value) => value % 2 === 0);
+
+        console.info(numbers);
+        console.info(ganjil);
+        console.info(genap);
+      }
+
+      {
+        const names = ["Adriansyah", "Maulana", "Riska", "Shafiya", "oase"];
+
+        const namesUpper = names.map((value) => value.toUpperCase());
+        console.info(namesUpper);
+
+        const reduce = names.reduce((before, value) => before + " " + value);
+        console.info(reduce);
+
+        const reduceRight = names.reduceRight((before, value) => before + " " + value);
+        console.info(reduceRight);
+
+        const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        const total = angka.reduce((before, value) => before + value);
+        console.info(total);
+
+        const totalRight = angka.reduceRight((before, value) => before + value);
+        console.info(totalRight);
+
+        const xTotal = angka.reduce((before, value) => before * value);
+        console.info(xTotal);
+
+        const xTotalRight = angka.reduceRight((before, value) => before * value);
+        console.info(xTotalRight);
+      }
+    </script>
+  </body>
+</html>

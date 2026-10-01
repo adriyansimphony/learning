@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      {
+        const date1 = new Date();
+        console.info(date1);
+
+        const date2 = new Date(2024, 5, 1);
+        console.info(date2);
+
+        const date3 = new Date(2025, 0, 1, 10, 30, 0);
+        console.info(date3);
+
+        // current milis
+        const date4 = new Date(1790845339557);
+        console.info(date4);
+      }
+      {
+        const date1 = new Date();
+        console.info(date1.getTime());
+
+        const date2 = new Date(2024, 5, 1);
+        console.info(date2.getTime());
+
+        const date3 = new Date(2025, 0, 1, 10, 30, 0);
+        console.info(date3.getTime());
+
+        // current milis
+        const date4 = new Date(1790845339557);
+        console.info(date4.getTime());
+
+        const newDate = Date.now();
+        console.info(newDate);
+      }
+    </script>
+  </body>
+</html>

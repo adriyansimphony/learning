@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      {
+        const set = new Set();
+        set.add("John");
+        set.add(30);
+        set.add("John");
+        console.info(set);
+
+        set.forEach((value) => console.info(value));
+      }
+      {
+        const map = new Map();
+
+        map.set("name", "Adriansyah");
+        map.set("age", 30);
+        console.info(map);
+
+        map.forEach((value, key) => console.info(`${value} : ${key}`));
+      }
+    </script>
+  </body>
+</html>
