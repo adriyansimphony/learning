@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module">
+      import { company, sum, Company } from "./scripts/multiple.js";
+      import { company as perusahaan, sum as total, Company as Perusahaan } from "./scripts/multiple2.js";
+
+      console.info(company);
+      console.info(perusahaan);
+      console.info(sum(2, 3));
+      console.info(total(2, 3));
+      const newcompany = new Company("Kaiyan");
+      console.info(newcompany);
+      const newperusahaan = new Perusahaan("Kaiyan");
+      console.info(newperusahaan);
+    </script>
+  </body>
+</html>

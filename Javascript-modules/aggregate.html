@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module">
+      import * as myAggregate from "./scripts/aggregate.js";
+
+      console.info(myAggregate.lastName);
+      console.info(new myAggregate.Person("Jane", "Smith"));
+    </script>
+  </body>
+</html>
