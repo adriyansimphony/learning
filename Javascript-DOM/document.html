@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>INI WEBSITE SEDERHANA</h1>
+    <form action="">
+      <li>Nama : <input type="text" placeholder="Nama" id="nama" value="Adrian"/></li>
+      <li>Pesan : <textarea placeholder="Pesan" /></textarea></li>
+      <ul></ul><input type="button" value="Submit" />
+    </form>
+    <div>
+      <p class="text" id="tulisan">Hello, World!</p>
+    </div>
+    <script>
+      const tulisan = document.getElementById("tulisan");
+      const nama = document.getElementById("nama");
+      console.info(nama.value);
+      console.info(document.title);
+      console.info(document.URL);
+    </script>
+  </body>
+</html>

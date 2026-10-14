@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <ul id="menu">
+        <li id="first">First</li>
+        <li id="second">Second</li>
+        <li id="third">Third</li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    const menu = document.getElementById("menu");
+    console.info(menu);
+    console.info(menu.innerText);
+    console.info(menu.innerHTML);
+    menu.removeChild(document.getElementById("first"));
+  </script>
+</html>
